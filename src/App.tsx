@@ -19,7 +19,7 @@ function Badge({ children }: { children: ReactNode }) {
       }}
     >
       <span
-        className="flex h-5 w-5 items-center justify-center rounded-md bg-slate-100 text-[13px]"
+        className="flex h-4 w-4 items-center justify-center rounded-md bg-slate-100 text-[13px]"
       >
         🔥
       </span>
@@ -51,7 +51,7 @@ function App() {
   return (
     <div className="min-h-screen bg-blox-bg text-blox-text">
       <header className="border-b border-b-[#EDECEA] bg-blox-bg backdrop-blur">
-        <div className="mx-auto flex w-full max-w-screen-2xl items-center justify-between px-6 py-4 md:py-5">
+        <div className="mx-auto flex w-full max-w-screen-lg items-center justify-between px-4 py-2 md:py-3">
         <div className="flex items-center gap-2 leading-none">
           <img
             src={VectorLogo}
@@ -80,11 +80,11 @@ function App() {
         </div>
       </header>
 
-      <main className="mx-auto flex w-full max-w-screen-2xl flex-col gap-12 px-6 py-12 sm:gap-14 md:py-16 border border-[#EDECEA]">
-        <section className="mx-auto w-full max-w-screen-xl">
-          <div className="flex w-full">
+      <main className="mx-auto flex w-full max-w-screen-lg flex-col gap-12 px-6 py-12 sm:gap-14 md:py-16 border border-[#EDECEA]">
+        <section className="mx-auto w-full px-2">
+          <div className="flex w-full px-6">
 
-            <div className="w-full max-w-[720px] space-y-7">
+            <div className="w-full space-y-5">
 
               <Badge>Most advanced landing page builder</Badge>
               <h1
@@ -93,8 +93,8 @@ function App() {
                   fontFamily: "Geist, sans-serif",
                   fontWeight: 600,
                   fontSize: "58px",
-                  lineHeight: "66px",
-                  letterSpacing: "-0.02em",
+                  lineHeight: "60px",
+                  letterSpacing: "-0.02rem",
                 }}
               >
                 Build landing pages that
@@ -102,14 +102,24 @@ function App() {
                 optimize themselves.
               </h1>
 
-              <p className="max-w-[620px] text-lg text-slate-600">
-                For modern performance marketers, Blox learns your brand’s style and helps you craft
-                high-converting landing pages for all of your campaigns.
+              <p className="max-w-[552px] max-h-[44px]"
+                  style={{
+                    fontFamily: "Geist, sans-serif",
+                    fontWeight: 300,
+                    fontSize: "14px",
+                    color: "#797979",
+                    lineHeight: "1.4rem",
+                    letterSpacing: "1px",
+                    }}
+              >
+                Blox is the autonomous landing page builder for performance marketers.
+                Ship, optimize and iterate with an agent trained on your brand.
               </p>
             </div>
           </div>
-           <div className="mt-10 flex w-full flex-row items-center justify-between gap-6">
-          <div className="relative flex h-[56px] w-full max-w-[480px] items-center">
+
+          <div className="mt-6 flex w-full flex-row items-center justify-between gap-6 px-4">
+          <div className="relative flex h-14 w-full w-64 items-center">
             <input
               type="email"
               placeholder="Enter your email address"
@@ -122,8 +132,8 @@ function App() {
             </button>
           </div>
 
-          <div className="flex items-center gap-4 rounded-[20px] border border-[#EDECEA] bg-[#FDFCFB] p-2 pr-8 shadow-[0_8px_20px_rgba(15,23,42,0.04)] m-4">
-            <div className="relative h-[62px] w-[96px] shrink-0 overflow-hidden rounded-[20px] cursor-pointer group">
+          <div className="flex items-center gap-4 rounded-[20px] border border-[#EDECEA] bg-[#FDFCFB] p-2 pr-8 shadow-[0_8px_20px_rgba(15,23,42,0.04)] m-4 h-20 w-80">
+            <div className="relative h-[62px] w-[84px] shrink-0 overflow-hidden rounded-[20px] cursor-pointer group">
             <img src={VideoPreview} alt="Founder" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"/>
               <div className="absolute inset-0 flex items-center justify-center bg-black/10">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm transition-transform group-hover:scale-110">
@@ -139,10 +149,10 @@ function App() {
             </div>
 
             <div className="flex flex-col">
-              <span className="text-[18px] font-semibold tracking-tight text-[#1A1A1A]">
+              <span className="text-[10px] font-semibold tracking-tight text-[#222222]">
                 Watch the video
               </span>
-              <span className="text-lg text-slate-600">
+              <span className="text-[10px] text-slate-400">
                 Presented by our founder
               </span>
             </div>
